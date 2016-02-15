@@ -8,7 +8,7 @@ body {
     max-width: 1040px;
     height: 1280px; 
     margin: 0 auto;
-    background-color: #DADADA;
+    background-color: #fff;
     color: #000;
 }
 
@@ -48,17 +48,76 @@ header h2 {
     font-style: italic;
 }
 
-.summary {
+.summary,
+.experiences {
     background: #fff;
-    border-bottom: 1px solid #e4e4e4;
-    padding: 10px 30px;
+    padding: 20px 30px;
 }
 
-.summary h2 {
+.experiences {
+    border: 1px solid #e4e4e4;
+    border-width:1px 0 0 0;
+}
+
+.summary h2,
+.experiences h2,
+.skills h2 {
     font-family: 'Yanone Kaffeesatz';
     text-shadow: 0 1px 1px rgba(64, 64, 64, 0.33);
     margin: 0 0 10px;
     font-size: 30px;
+}
+
+.experiences h3,
+.skills h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 0 1px 1px rgba(64, 64, 64, 0.33);
+    margin: 0;
+    font-size: 20px;
+}
+
+.experiences .experience {
+    float: left;
+    width: 49.5%;
+}
+
+.experiences .experience:nth-child(even) {
+    margin-right: 1%;
+}
+
+.experiences .experience .experience-detail {
+    margin: 10px 0;
+    border: 1px solid #e4e4e4;
+    padding: 5px 10px;
+}
+
+.experiences .experience h4 {
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    color: #d20073;
+}
+
+.experiences .experience .description {
+    margin-bottom: 10px;
+}
+
+.experiences .experience .link {
+    color: #d20073;
+    font-size: 13px;
+    float: right;
+    line-height: 20px;
+}
+
+.experiences .experience .technical {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.experiences .experience .technical-detail {
+    background: #009DE0;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
 }
 
 .skills {
@@ -70,8 +129,8 @@ header h2 {
 .skills .skill {
     display: inline-block;
     vertical-align: top;
-    width: 31%;
-    margin: 0 2% 2% 0;
+    width: 24.5%;
+    margin-bottom: 10px;
 }
 
 .skills .skill h3 {
@@ -90,28 +149,32 @@ header h2 {
 .skills .skill .icon {
     display: inline-block;
     vertical-align: top;
-    width: 75px;
-    height: 75px;
-    background: url(img/skills.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    background: url(img/skills.png) no-repeat #fff;
+    background-size: 97%;
     margin-right: 10px;
 }
 
-.skills .skill.html-css .icon { background-position: 0 -100px; }
-.skills .skill.mobile .icon { background-position: 0 -200px; }
-.skills .skill.node-js .icon { background-position: 0 -300px; }
-.skills .skill.jQuery .icon { background-position: 0 -400px; }
-.skills .skill.php .icon { background-position: 0 -500px; }
-.skills .skill.facebook-app .icon { background-position: 0 -600px; }
+.skills .skill .rating {
+    display: inline-block;
+}
+
+.skills .skill.html-css .icon { background-position: 0 -60px; }
+.skills .skill.mobile .icon { background-position: 0 -125px; }
+.skills .skill.node-js .icon { background-position: 0 -190px; }
+.skills .skill.jQuery .icon { background-position: 0 -255px; }
+.skills .skill.php .icon { background-position: 0 -315px; }
+.skills .skill.facebook-app .icon { background-position: 0 -382px; }
 .skills .skill.windows-store .icon { background-position: 0 -700px; }
-.skills .skill.angularJS .icon { background-position: 0 -800px; }
-.skills .skill.phonegap .icon { background-position: 0 -900px; }
+.skills .skill.angularJS .icon { background-position: 0 -512px; }
+.skills .skill.phonegap .icon { background-position: 0 -575px; }
 
 .rating > span {
     display: inline-block;
     position: relative;
-    width: 1.1em;
     color: #F1C40F;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .rating > span:before {
