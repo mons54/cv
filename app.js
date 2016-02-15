@@ -2,7 +2,7 @@ var fs      = require('fs'),
     pdf     = require('html-pdf'),
     html    = fs.readFileSync('./index.html', 'utf8'),
     options = { 
-        filename: './cv-laura-boiselle.pdf', 
+        filename: './cv.pdf', 
         format: 'Letter' 
     };
  
