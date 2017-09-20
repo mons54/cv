@@ -68,6 +68,9 @@ header h2 {
     font-size: 30px;
 }
 
+.summary p {
+  line-height: 24px;
+}
 .experiences h3,
 .skills h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -77,6 +80,7 @@ header h2 {
 }
 
 .experiences .experience {
+    margin-top: 20px;
     float: left;
     width: 49.5%;
 }
@@ -99,6 +103,7 @@ header h2 {
 
 .experiences .experience .description {
     margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .experiences .experience .link {
@@ -125,12 +130,15 @@ header h2 {
     padding: 20px 30px;
 }
 
+.skills h2 {
+    margin-bottom: 30px;
+}
 
 .skills .skill {
     display: inline-block;
     vertical-align: top;
     width: 24.5%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .skills .skill h3 {
@@ -156,19 +164,38 @@ header h2 {
     margin-right: 10px;
 }
 
+
+.skills .skill.sf2 .icon { 
+    background: url(img/sf.png) no-repeat #fff;
+}
+
+.skills .skill.facebook-app .icon { 
+    background: url(img/fb.png) no-repeat #fff;
+}
+
+.skills .skill.node-js .icon { 
+    background: url(img/node.png) no-repeat #fff;
+}
+
+.skills .skill.jQuery .icon { 
+    background: url(img/jquery.gif) no-repeat #fff;
+}
+
+.skills .skill.php .icon { 
+    background: url(img/php.png) no-repeat #fff;
+}
+
+.skills .skill.cordova .icon { 
+    background: url(img/cordova.png) no-repeat #fff;
+}
+
 .skills .skill .rating {
     display: inline-block;
 }
 
 .skills .skill.html-css .icon { background-position: 0 -60px; }
-.skills .skill.mobile .icon { background-position: 0 -125px; }
-.skills .skill.node-js .icon { background-position: 0 -190px; }
-.skills .skill.jQuery .icon { background-position: 0 -255px; }
-.skills .skill.php .icon { background-position: 0 -315px; }
-.skills .skill.facebook-app .icon { background-position: 0 -382px; }
 .skills .skill.windows-store .icon { background-position: 0 -700px; }
 .skills .skill.angularJS .icon { background-position: 0 -512px; }
-.skills .skill.phonegap .icon { background-position: 0 -575px; }
 
 .rating > span {
     display: inline-block;
