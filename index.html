@@ -2,153 +2,337 @@
     <head>
         <meta charset="utf8">
         <title>CV Julien SIMONET</title>
-        <link href="http://fonts.googleapis.com/css?family=Oswald|Lobster|Marmelad|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="C:/Users/Julien/Documents/cv/style.css">
+        <link href="http://fonts.googleapis.com/css?family=Roboto|Oswald|Lobster|Marmelad|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Marmelad', sans-serif;
+                max-width: 1040px;
+                height: 1280px; 
+                margin: 0 auto;
+                color: #000;
+                background: #f5f5f5;
+            }
+
+
+            a {
+                color: #d20073;
+            }
+
+            header {
+                font-family: 'Oswald';
+                font-size: 15px;
+                font-weight: normal;
+                background-color: #181818;
+                color: #fff;
+                position: relative;
+                padding: 20px 30px;
+            }
+
+            header .logo {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                height: 80px;
+                width: 80px;
+                background: url('file:///C:/Users/jmons/Documents/projects/cv/img/logo.jpg') no-repeat center;
+                background-size: cover;
+            }
+
+            header h1 {
+                font-size:  45px;
+                text-align: center;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            header h2 {
+                font-family: 'Oswald', sans-serif;
+                margin: 10px 0 0 0;
+                font-size: 20px;
+                text-align: center;
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            .contact {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .summary,
+            .experiences {
+                background: #fff;
+                padding: 20px 30px;
+            }
+
+            .experiences {
+                background-color: #fff;
+                border-top: 1px solid #e4e4e4;
+                border-width:1px 0 0 0;
+                padding-bottom: 40px;
+            }
+
+            .summary h2,
+            .experiences h2,
+            .skills h2 {
+                font-family: 'Yanone Kaffeesatz';
+                text-shadow: 0 1px 1px rgba(64, 64, 64, 0.33);
+                margin: 20px 0;
+                font-size: 24px;
+                line-height: 0;
+            }
+
+            .summary p {
+              line-height: 24px;
+            }
+
+            .experiences h3,
+            .skills h3 {
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                text-shadow: 0 1px 1px rgba(64, 64, 64, 0.33);
+                margin: 0;
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            .experience {
+                margin-top: 20px;
+                float: left;
+                width: 49%;
+            }
+
+            .experiences-content :nth-child(odd) {
+                margin-right: 2%;
+            }
+
+            .experience-detail {
+                margin: 10px 0;
+                border: 1px solid #e4e4e4;
+                padding: 5px 10px;
+            }
+
+            .experience h4 {
+                margin-bottom: 5px;
+                font-family: 'Oswald', sans-serif;
+                color: #d20073;
+            }
+
+            .experience .description {
+                margin-bottom: 10px;
+                line-height: 24px;
+            }
+
+            .experience .technical {
+                font-size: 13px;
+            }
+
+            .experience .technical-detail {
+                background: #009DE0;
+                color: #fff;
+                padding: 2px 6px 4px 6px;
+                line-height: 13px;
+                border-radius: 2px;
+                display: inline-block;
+                margin-right: 4px
+            }
+
+            .skills {
+                padding: 20px 30px;
+            }
+
+            .skills h2 {
+                margin-bottom: 30px;
+            }
+
+            .skills .skill {
+                display: inline-block;
+                vertical-align: top;
+                width: 310px;
+                margin-bottom: 20px;
+            }
+
+            .skills .skill h3 {
+                display: inline-block;
+                width: 150px;
+            }
+
+            .rating > span {
+                display: inline-block;
+                position: relative;
+                color: #F1C40F;
+                font-size: 26px;
+            }
+
+            .rating > span.inactive {
+               color: #dadada;
+            }
+
+            .rating > span:before {
+                content: "\2605";
+                position: absolute;
+            }
+
+            .period {
+                color: #607D8B;
+                font-size: 14px;
+                margin: 10px 0;
+            }
+        </style>
     </head>
     <body>
         <header>
             <div class="contact">
                 <div>Julien SIMONET</div>
                 <div>Né le 16/08/1984</div>
-                <div>5 B rue du Joli Coeur<br>54000 NANCY</div>
                 <div>07 68 68 73 99</div>
             </div>
             <div class="logo"></div>
             <h1>Web Developer</h1>
-            <h2>Coding, Versioning, Conception, Modélisation, Méthode agile, Test unitaire</h2>
+            <h2>Coding, Versioning, Testing, CI, Conception, Modélisation, Méthode Agile</h2>
         </header>
         <section class="summary">
-            <h2>Entrepreneur et ambitieux</h2>
             <p>
-                Autodidacte, j'ai commencé par développer de petits sites. Puis, un <strong>jeu d'échecs sur Facebook</strong>. Avant d'être recruté par une <strong>banque en ligne</strong> qui m'a appris à me professionnaliser et travailler en équipe. J'aime les défis et les challenges.
+                Autodidacte, j'ai appris le métier de développeur en me documentent sur le web. En 2012, je connais deux belles réussites avec un site sur les Jeux Olympiques de Londres et un jeu d'échecs sur Facebook. Ce qui m'a permis de rejoindre une équipe d'une trentaine de développeurs dans une banque en ligne. J'y ai appris à me professionnaliser et à travailler en équipe. Aujourd'hui, je suis à la recherche de nouveaux challenges. Je n'oublie pas de me tenir informé en pratiquant régulièrement la veille technologique.</p>
             </p>
         </section>
         <section class="experiences">
             <h2>Expériences</h2>
-            <div class="experience">
-                <h3>Boursorama Banque de 2013 à 2017</h3>
-                <div class="experience-detail">
-                    <h4>Refonte des parcours de souscription</h4>
-                    <p class="description">Création de Web Services et développement du site. Réalisation de tests unitaires.</p>
-                    <div class="technical">
-                        <span class="technical-detail">PHP</span>
-                        <span class="technical-detail">AngularJS</span>
-                        <span class="technical-detail">Symphony 2</span>
-                    </div>
-                    <div style="clear: both"></div>
+            <div class="experiences-content">
+                <div class="experience">
+                <h3>Chef de projet | Ipocam (Golbey)</h3>
+                <div class="period">Avril 2018 > Juin 2018 (3 mois)</div>
+                <p class="description">
+                    Création d'un site client. Développement d'une application d'édition de menu pour restaurateurs en ligne. 
+                    Méthode agile (scrum). Gestion du CI, des serveurs et des environnements de développement.
+                </p>
+                <div class="technical">
+                    <span class="technical-detail">VueJS</span>
+                    <span class="technical-detail">Symfony 4</span>
+                    <span class="technical-detail">HTML/CSS</span>
                 </div>
-                <div class="experience-detail">
-                    <h4>Refonte du site client</h4>
-                    <p class="description">Architecture trois tiers orientée API. Création de Web Services et développement du site. Réalisation de tests unitaires</p>
-                    <a class="link" href="//boursorama-banque.com">boursorama-banque.com</a>
-                    <div class="technical">
-                        <span class="technical-detail">PHP</span>
-                        <span class="technical-detail">Jquery</span>
-                        <span class="technical-detail">Bootstrap</span>
-                        <span class="technical-detail">Symphony 2</span>
-                    </div>
-                    <div style="clear: both"></div>
                 </div>
-                <div class="experience-detail">
-                    <h4>Refonte du site client espagnol - Self Bank</h4>
-                    <p class="description">Architecture trois tiers orientée API. Création de Web Services et développement du site.</p>
-                    <a class="link" href="//selfbank.es">selfbank.es</a>
+                <div class="experience">
+                    <h3>Développeur web | Miss Numérique (Jarville)</h3>
+                    <div class="period">Juin 2017 > Avril 2018 (11 mois)</div>
+                    <p class="description">
+                        Maintenance et évolution du site et de diverses applications web. 
+                        Migration PHP. 
+                        Développement d'un logiciel d'édition de newsletter.
+                        <br>
+                        <a href="https://www.missnumerique.com/">www.missnumerique.com</a>
+                    </p>
                     <div class="technical">
                         <span class="technical-detail">PHP</span>
-                        <span class="technical-detail">Jquery</span>
-                        <span class="technical-detail">Bootstrap</span>
-                        <span class="technical-detail">Symphony</span>
+                        <span class="technical-detail">Javascript</span>
+                        <span class="technical-detail">HTML/CSS</span>
                     </div>
-                    <div style="clear: both"></div>
-                </div>
-                <div class="experience-detail">
-                    <h4>Maintenance - Application Facebook</h4>
-                    <p class="description">Développement d'une application permetant des parrainages via Facebook. Divers travaux de maintenance.</p>
-                    <a class="link" href="//apps.facebook.com/boursoramabanque">apps.facebook.com/boursoramabanque</a>
-                    <div class="technical">
-                        <span class="technical-detail">PHP</span>
-                        <span class="technical-detail">Mootools</span>
-                        <span class="technical-detail">SDK Facebook</span>
-                    </div>
-                    <div style="clear: both"></div>
                 </div>
             </div>
-            <div class="experience">
-                <h3>Solutions Web - Depuis 2012</h3>
-                <div class="experience-detail">
-                    <h4>Chess on Facebook</h4>
-                    <p class="description">Développement d'un jeu d'échecs disponible sur Facebook, Google et VK. Réalisation d'applications hybride Android et IOS. Note supérieur à 4/5 sur Facebook, Android et IOS.</p>
-                    <a class="link" href="https://www.worldofchess.online/">worldofchess.online</a>
-                    <div class="technical">
-                        <span class="technical-detail">NodeJS</span>
-                        <span class="technical-detail">SocketIo</span>
-                        <span class="technical-detail">AngularJS</span>
-                        <span class="technical-detail">Cordova</span>
-                    </div>
-                    <div style="clear: both"></div>
+            <div class="experiences-content">
+                <div class="experience">
+                <h3>Développeur web | Boursorama Banque (Nancy)</h3>
+                <div class="period">Juin 2013 > Juin 2018 (4 ans et 1 mois)</div>
+                <p class="description">
+                    Refonte des sites clients français et espagnols au sein d'une équipe d'environ 15 développeurs. 
+                    Les deux projets se sont succédé et ont duré environ 1 an à l'aide de la méthode agile. 
+                    Développement d'une application Facebook et de parcours de souscription. 
+                    Divers travaux quotidiens de maintenance.
+                    <a href="https://www.selfbank.es">www.selfbank.es</a>
+                    <a href="https://www.boursorama-banque.com">www.boursorama-banque.com</a>
+                </p>
+                <div class="technical">
+                    <span class="technical-detail">PHP</span>
+                    <span class="technical-detail">Javascript</span>
+                    <span class="technical-detail">HTML/CSS</span>
+                    <span class="technical-detail">AngularJS</span>
+                    <span class="technical-detail">Symfony 2</span>
                 </div>
-                <div class="experience-detail">
-                    <h4>EMC2</h4>
-                    <p class="description">Développement d'une application boursière agricole mobile.</p>
-                    <div class="technical">
-                        <span class="technical-detail">PhoneGap/Cordova</span>
-                        <span class="technical-detail">AngularJS</span>
-                        <span class="technical-detail">jQuery</span>
-                        <span class="technical-detail">Javascript</span>
-                    </div>
-                    <div style="clear: both"></div>
                 </div>
-                <div class="experience-detail">
-                    <h4>Journal officiel du Luxembourg</h4>
-                    <p class="description">Développement d’une Web App permetant de trier des documents.</p>
+                <div class="experience">
+                    <h3>Développeur web | Auto-entrepreneur</h3>
+                    <div class="period">Depuis 2012</div>
+                    <p class="description">
+                        Conception et développement d'un jeux d'échecs sur Facebook (100 000 joueurs actifs).
+                        Conception, développement et référencement d'un site d’actualités sur les jeux olympiques de Londres 2012 (2 millions de visiteurs uniques).
+                        Création de divers sites vitrines.
+                        <br>
+                        <a href="https://www.worldofchess.online">www.worldofchess.online</a>
+                        &nbsp;&nbsp;<a href="http://www.jo-2012.info">www.jo-2012.info</a>
+                    </p>
                     <div class="technical">
-                        <span class="technical-detail">AngularJS</span>
-                        <span class="technical-detail">jQuery</span>
-                        <span class="technical-detail">Bootstrap</span>
-                    </div>
-                    <div style="clear: both"></div>
-                </div>
-                <div class="experience-detail">
-                    <h4>jo-2012.info</h4>
-                    <p class="description">Développement d'un site d'actualité. Référencement parmis les gros site d'actualité. Plus de 3 millions de pages vues l'été 2012.</p>
-                    <a class="link" href="//jo-2012.info">jo-2012.info</a>
-                    <div class="technical">
-                        <span class="technical-detail">HTML/CSS</span>
-                        <span class="technical-detail">jQuery</span>
                         <span class="technical-detail">PHP</span>
-                        <span class="technical-detail">MySQL</span>
+                        <span class="technical-detail">Javascript</span>
+                        <span class="technical-detail">HTML/CSS</span>
+                        <span class="technical-detail">AngularJS</span>
+                        <span class="technical-detail">Symfony 2</span>
                     </div>
-                    <div style="clear: both"></div>
                 </div>
             </div>
             <div style="clear: both"></div>
         </section>
-        <div style="clear: both"></div>
         <section class="skills">
             <h2>Compétences</h2>
-            <div class="skill angularJS">
+            <div class="skill html">
+                <h3>HTML</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </span>
+            </div>
+            <div class="skill css">
+                <h3>CSS</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill js">
+                <h3>Javascript</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                </span>
+            </div>
+            <div class="skill es6">
+                <h3>ECMAScript</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill vuejs">
+                <h3>VueJS</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill angularjs">
                 <h3>AngularJS</h3>
-                <span class="icon"></span>
                 <span class="rating">
                     <span>☆</span>
                     <span>☆</span>
                     <span>☆</span>
-                    <span>☆</span>
+                    <span class="inactive">☆</span>
                 </span>
             </div>
-            <div class="skill node-js">
-                <h3>Node.js</h3>
-                <span class="icon"></span>
-                <span class="rating">
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                </span>
-            </div>
-            <div class="skill jQuery">
+            <div class="skill jquery">
                 <h3>jQuery</h3>
-                <span class="icon"></span>
                 <span class="rating">
                     <span>☆</span>
                     <span>☆</span>
@@ -156,52 +340,85 @@
                     <span>☆</span>
                 </span>
             </div>
-            <div class="skill cordova">
-                <h3>Cordova</h3>
-                <span class="icon"></span>
+            <div class="skill nodejs">
+                <h3>NodeJS</h3>
                 <span class="rating">
                     <span>☆</span>
                     <span>☆</span>
                     <span>☆</span>
-                </span>
-            </div>
-            <div class="skill facebook-app">
-                <h3>Facebook Apps</h3>
-                <span class="icon"></span>
-                <span class="rating">
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                </span>
-            </div>
-            <div class="skill html-css">
-                <h3>HTML/CSS</h3>
-                <span class="icon"></span>
-                <span class="rating">
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                </span>
-            </div>
-            <div class="skill sf2">
-                <h3>Synfony 2</h3>
-                <div class="icon"></div>
-                <span class="rating">
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
+                    <span class="inactive">☆</span>
                 </span>
             </div>
             <div class="skill php">
                 <h3>PHP</h3>
-                <div class="icon"></div>
                 <span class="rating">
                     <span>☆</span>
                     <span>☆</span>
                     <span>☆</span>
                     <span>☆</span>
+                </span>
+            </div>
+            <div class="skill symfony">
+                <h3>Synfony</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill mysql">
+                <h3>MySQL</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill mongodb">
+                <h3>MongoDB</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill google">
+                <h3>Google API</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill facebook">
+                <h3>Facebook API</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill cordova">
+                <h3>Cordova</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
+                </span>
+            </div>
+            <div class="skill">
+                <h3>Photoshop</h3>
+                <span class="rating">
+                    <span>☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
+                    <span class="inactive">☆</span>
                 </span>
             </div>
         </section>
